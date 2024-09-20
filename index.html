@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+
+        }
+
+        #main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        img {
+            width: 200px;
+            height: 250px;
+            border: 2px solid white;
+        }
+
+        img:nth-child(1) {
+            margin-right: -20px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px)rotateY(25deg);
+        }
+
+        img:nth-child(2) {
+            margin-right: -20px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px)rotateY(25deg);
+        }
+
+        img:nth-child(4) {
+            margin-left: -20px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px)rotateY(-25deg);
+        }
+
+        img:nth-child(5) {
+            margin-left: -20px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px)rotateY(-25deg);
+        }
+        img:nth-child(3){
+            z-index: 1;
+        }
+        #CARDS{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 50px;
+            
+        }
+        #mm{
+          
+          flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:30px;  
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mm">
+    <div ID="CARDS">IMAGE CARDS</div>
+    <div id="main">
+        <img src="moon2.jpeg">
+        <img src="moon3.jpeg">
+        <img src="moon4.jpeg">
+        <img src="moon5.jpeg">
+        <img src="moon6.jpeg">
+    </div>
+    </div>
+</body>
+
+</html>
